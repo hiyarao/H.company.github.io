@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+img{
+     cursor: pointer;
+}
+.flex-div{
+	display: flex;
+	align-items: center;
+
+}
+nav{
+	padding: 5px 1%;
+	justify-content: space-between;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	background: #fff;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+    
+}
+
+.nav-right img{
+	width: 25px;
+	margin-right: 25px;
+border-radius: 50%;
+
+}
+
+.nav-right user-icon{
+	width: 35px;
+	border-radius: 45%;
+	margin-right: 0;
+
+}
+.nav-left .menu-icon{
+
+   width: 22px;
+   margin-right: 25px;
+}
+
+.nav-left .logo{
+     width: 130px;
+
+}
+.nav-middle .mic-iocn{
+     width: 16px;
+}
+ .nav-middle .search-box{
+border: 1px solid #ccc;
+margin-right: 15px;
+padding: 8px 12px;
+border-radius: 25px;
+
+ }
+ .nav-middle .search-box input{
+ 	width: 400px;
+ 	border: 0;
+ 	outline: 0;
+ 	background: transparent;
+    
+ }
+ .nav-middle .search-box img{
+    width: 15px;
+}
+/* -----sidebar----------------*/
+
+.sidebar{
+  background: #fff;
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding-left: 2%;
+  padding-top: 80ph;
+}
+.shortcut-links a img{
+    width: 20px;
+    margin-right: 20px;
+    display: flex;
+    padding-top: 10px;
+}
+
+.shortcut-links a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+.shortcut-links a:first-child{
+   color: #ed3833;
+}
+.sidebar hr{
+   border: 0;
+   height: 1px;
+   background: #ccc;
+   width: 85%;
+
+}
+.Subscribed-list h3{
+   font-size: 8px;
+   margin: 10px 0;
+   color: #5a5a5a;
+}
+.Subscribed-list a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+
+
+    }
+    .Subscribed-list img{
+      width: 25px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+	</style>
+</head><body><nav class="flex-div">
+    <div class="nav-left flex-div">
+      <img src="yo_files/menu.png" class="menu-icon">
+      <img src="yo_files/logo.png" class="logo">
+    </div>
+    <div class="nav-middle flex-div">
+     <div class="search-box flex-div">
+     	<input type="text" placeholder="search">
+     	<img src="yo_files/search.png">
+     </div>
+    <img src="yo_files/voice-search.png" class="mic-iocn">
+</div>
+    <div class="nav-right">
+    <img src="yo_files/upload.png">
+    <img src="yo_files/more.png">
+    <img src="yo_files/notification.png">
+    <img src="yo_files/jack.png" class="user-icon">
+    </div>
+</nav>
+<!--------------------sidebar-------------- --->
+<div class="sidebar">
+<div class="shortcut-links">
+    <br><br><br>
+    <a href=""><img src="yo_files/home.png"><p>Home</p></a>
+    <a href=""><img src="yo_files/explore.png"><p>Explore</p></a>
+    <a href=""><img src="yo_files/subscriprion.png"><p>Subscriprion</p></a>
+    <a href=""><img src="yo_files/library.png"><p>Library</p></a>
+    <a href=""><img src="yo_files/history.png"><p>History</p></a>
+    <a href=""><img src="yo_files/playlist.png"><p>Playlist</p></a>
+    <a href=""><img src="yo_files/messages.png"><p>Messages</p></a>
+    <a href=""><img src="yo_files/show-more.png"><p>Show More</p></a>
+     <hr>
+</div>
+       <div class="Subscribed-list">
+        <h3>SUBSCRIBED</h3>
+        <a href=""><img src="yo_files/Jack.png"><p>Jack Nichols</p></a>
+        <a href=""><img src="yo_files/cameron.png"><p>cameron</p></a>
+        <a href=""><img src="yo_files/simon.png"><p>simon</p></a>
+        <a href=""><img src="yo_files/megan.png"><p>megan</p></a>
+        <a href=""><img src="yo_files/gerard.png"><p>gerard</p></a>
+       </div>
+    </div>
+
+</body></html>

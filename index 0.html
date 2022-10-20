@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>text</title>
+	<style>
+
+*
+{
+	margin: 0;
+	padding: 5px;
+	font-family: 'poppins', sans-serf;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #000;
+}
+h2
+{
+	position: relative;
+	margin:20px 0 0;
+	font-size: 4em;
+	font-weight: 900;
+	color: #fff;
+	z-index: 1;
+	overflow: hidden;
+}
+h2:before
+{
+	content: '';
+	position: absolute;
+	left: 120;
+	width: 120%;
+	height: 100%;
+    background: linear-gradient(90deg,transparent 0%,#000 5%, #000 100%);
+    animation: animate 15s linear forwards;
+    animation-delay: 3s;
+}
+@keyframes animate
+{
+	0%
+	{
+		left: 110%;
+	}
+	100%
+	{
+		left: -20%;
+	}
+}
+h2 span
+{
+	color: #ff022c;
+}
+video
+{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+a 
+{
+text-decoration: none;
+}
+
+	</style>
+</head>
+<body>
+	<video src="particles.mp4" muted="" autoplay=""></video>
+	<a href="file:///C:/Users/pc/Desktop/all%20file/nbv/bike/bmw.mp4">
+<a href="file:///C:/Users/pc/Desktop/all%20file/nbv/index.html"><h2><span>H.</span>Co<span>mp</span>mpany</h2>
+
+</body>
+</html>

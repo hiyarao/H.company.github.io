@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Voice Assistant</title>
+ <style>
+#main-container {
+  text-align: center;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+
+ </style>
+  </head>
+  <body>
+
+    <div id="main-container">
+        <p id="input-area">...</p>
+        <p id="output-area">...</p>
+        <button id="listen-button" onclick="listen()">Listen</button>
+    </div>
+
+    <script src="script.js"></script>
+
+<script >
+function listen() {
+  let inputArea = document.getElementById('input-area')
+  let outputArea = document.getElementById('output-area')
+
+  var recognition = new webkitSpeechRecognition();
+  recognition.lang = "en-GB";
+  recognition.start();
+
+  recognition.onresult = function(event) {
+    let transcript = event.results[0][0].transcript;
+    inputArea.innerHTML = event.results[0][0].transcript;
+  }
+}
+if (transcript == "hello") {
+    outputArea.innerHTML = "Hello, User!"
+}
+  recognition.onresult = function(event) {
+    let transcript = event.results[0][0].transcript;
+    if (transcript == "hello") {
+      outputArea.innerHTML = "Hello, User!"
+    }
+    inputArea.innerHTML = event.results[0][0].transcript;
+  }
+   if (transcript.includes("hello")) {
+      outputArea.innerHTML = "Hello, User!"
+ }
+ else if (transcript.includes("weather")) {
+    window.open("https://www.google.com/search?q=weather") 
+} else {
+    outputArea.innerHTML = "I don't know what you mean."
+}
+
+
+
+</script>
+  </body>
+</html>
